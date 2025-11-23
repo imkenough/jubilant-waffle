@@ -1,23 +1,26 @@
-"use client"
+"use client";
 
-import * as React from "react"
+import * as React from "react";
 import {
   AudioWaveform,
   Command,
   GalleryVerticalEnd,
-} from "lucide-react"
+  Github,
+  Globe,
+} from "lucide-react";
 
-import { NavMain } from "@/components/nav-main"
-import { NavUser } from "@/components/nav-user"
-import { TeamSwitcher } from "@/components/team-switcher"
+import { NavMain } from "@/components/nav-main";
+import { NavUser } from "@/components/nav-user";
+import { TeamSwitcher } from "@/components/team-switcher";
 import {
   Sidebar,
   SidebarContent,
   SidebarFooter,
   SidebarHeader,
   SidebarRail,
-} from "@/components/ui/sidebar"
-import { type Subject } from "@/hooks/use-viewer"
+} from "@/components/ui/sidebar";
+import { type Subject } from "@/hooks/use-viewer";
+import { Button } from "./ui/button";
 
 // This is sample data.
 const data = {
@@ -43,7 +46,7 @@ const data = {
       plan: "Free",
     },
   ],
-}
+};
 
 export function AppSidebar({
   subjects,
@@ -51,15 +54,15 @@ export function AppSidebar({
   onSelectSubject,
   ...props
 }: React.ComponentProps<typeof Sidebar> & {
-  subjects: Subject[]
-  selectedSubject: Subject | null
-  onSelectSubject: (subject: Subject) => void
+  subjects: Subject[];
+  selectedSubject: Subject | null;
+  onSelectSubject: (subject: Subject) => void;
 }) {
   return (
     <Sidebar collapsible="icon" {...props}>
-      <SidebarHeader>
+      {/* <SidebarHeader>
         <TeamSwitcher teams={data.teams} />
-      </SidebarHeader>
+      </SidebarHeader> */}
       <SidebarContent>
         <NavMain
           subjects={subjects}
@@ -68,9 +71,31 @@ export function AppSidebar({
         />
       </SidebarContent>
       <SidebarFooter>
-        <NavUser user={data.user} />
+        <div className="flex flex-col gap-2">
+          <a
+            href="https://github.com/imkenough/jubilant-waffle"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <Button variant="outline" className="w-full justify-start">
+              <Github />
+              GitHub
+            </Button>
+          </a>
+          <a
+            href="https://drive.google.com/drive/u/2/folders/1Lt_K-qOXrnSn3dyhjV1CpN8gRrYR8ooe"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <Button variant="outline" className="w-full justify-start">
+              <Globe />
+              Drive
+            </Button>
+          </a>
+        </div>
+        {/* <NavUser user={data.user} /> */}
       </SidebarFooter>
       <SidebarRail />
     </Sidebar>
-  )
+  );
 }
