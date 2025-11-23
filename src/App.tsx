@@ -1,3 +1,4 @@
+import React from "react";
 import { AppSidebar } from "@/components/app-sidebar";
 import { ThemeProvider } from "@/components/theme-provider";
 import {
@@ -16,12 +17,14 @@ import {
 } from "@/components/ui/sidebar";
 import { useViewer } from "@/hooks/use-viewer";
 import { ModeToggle } from "@/components/mode-toggle";
-import { Routes, Route, Link } from "react-router-dom";
-
-// Import the new view components
+import { Routes, Route, Link, useLocation } from "react-router-dom";
 import { SubjectsList } from "./components/subjects-list";
 import { SubjectMaterials } from "./components/subject-materials";
 import { FileViewer } from "./components/file-viewer";
+
+const breadcrumbNameMap: { [key: string]: string } = {
+  "subject": "Subject",
+};
 
 export default function Page() {
   const {
@@ -30,6 +33,9 @@ export default function Page() {
     subjects,
     selectedFile,
   } = useViewer();
+
+  const location = useLocation();
+  const pathnames = location.pathname.split("/").filter((x) => x);
 
   return (
     <ThemeProvider defaultTheme="dark" storageKey="vite-ui-theme">
@@ -49,46 +55,41 @@ export default function Page() {
               />
               <Breadcrumb>
                 <BreadcrumbList>
-                  <BreadcrumbItem className="hidden md:block">
+                  <BreadcrumbItem>
                     <BreadcrumbLink asChild>
-                      <Link to="/" className="cursor-pointer">
-                        Subjects
-                      </Link>
+                      <Link to="/">Subjects</Link>
                     </BreadcrumbLink>
                   </BreadcrumbItem>
-                  {selectedSubject && (
-                    <>
-                      <BreadcrumbSeparator className="hidden md:block" />
-                      <BreadcrumbItem>
-                        {selectedFile ? (
-                          <BreadcrumbLink asChild>
-                            <Link
-                              to={`/subject/${encodeURIComponent(
-                                selectedSubject.title
-                              )}`}
-                              className="cursor-pointer"
-                            >
-                              {selectedSubject.title}
-                            </Link>
-                          </BreadcrumbLink>
-                        ) : (
-                          <BreadcrumbPage>
-                            {selectedSubject.title}
-                          </BreadcrumbPage>
-                        )}
-                      </BreadcrumbItem>
-                    </>
-                  )}
-                  {selectedFile && (
-                    <>
-                      <BreadcrumbSeparator className="hidden md:block" />
-                      <BreadcrumbItem>
-                        <BreadcrumbPage>
-                          {selectedFile.split("/").pop()}
-                        </BreadcrumbPage>
-                      </BreadcrumbItem>
-                    </>
-                  )}
+                  <BreadcrumbSeparator />
+                  {(() => {
+                    const filteredPathnames = pathnames.filter(
+                      (name) => name !== "subject"
+                    );
+                    return filteredPathnames.map((value, index) => {
+                      const last = index === filteredPathnames.length - 1;
+                      const to = `/subject/${filteredPathnames
+                        .slice(0, index + 1)
+                        .join("/")}`;
+                      const name = decodeURIComponent(
+                        breadcrumbNameMap[value] || value
+                      );
+
+                      return (
+                        <React.Fragment key={to}>
+                          <BreadcrumbItem>
+                            {last ? (
+                              <BreadcrumbPage>{name}</BreadcrumbPage>
+                            ) : (
+                              <BreadcrumbLink asChild>
+                                <Link to={to}>{name}</Link>
+                              </BreadcrumbLink>
+                            )}
+                          </BreadcrumbItem>
+                          {!last && <BreadcrumbSeparator />}
+                        </React.Fragment>
+                      );
+                    });
+                  })()}
                 </BreadcrumbList>
               </Breadcrumb>
             </div>
