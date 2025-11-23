@@ -14,15 +14,27 @@ import {
   SidebarProvider,
   SidebarTrigger,
 } from "@/components/ui/sidebar";
-import * as React from "react";
+import { SubjectView } from "@/components/subject-view";
+import { SubjectsView } from "@/components/subjects-view";
+import { useViewer } from "@/hooks/use-viewer";
 
 export default function Page() {
-  const [selectedFile, setSelectedFile] = React.useState<string | null>(null);
+  const {
+    selectedFile,
+    selectedSubject,
+    onSelectFile,
+    onSelectSubject,
+    subjects,
+  } = useViewer();
 
   return (
     <ThemeProvider defaultTheme="dark" storageKey="vite-ui-theme">
       <SidebarProvider>
-        <AppSidebar setSelectedFile={setSelectedFile} />
+        <AppSidebar
+          subjects={subjects}
+          selectedSubject={selectedSubject}
+          onSelectSubject={onSelectSubject}
+        />
         <SidebarInset>
           <header className="flex h-16 shrink-0 items-center gap-2 transition-[width,height] ease-linear group-has-data-[collapsible=icon]/sidebar-wrapper:h-12">
             <div className="flex items-center gap-2 px-4">
@@ -34,15 +46,28 @@ export default function Page() {
               <Breadcrumb>
                 <BreadcrumbList>
                   <BreadcrumbItem className="hidden md:block">
-                    <BreadcrumbLink href="#">
+                    <BreadcrumbLink
+                      onClick={() => {
+                        onSelectSubject(null)
+                      }}
+                      className="cursor-pointer"
+                    >
                       Subjects
                     </BreadcrumbLink>
                   </BreadcrumbItem>
+                  {selectedSubject && (
+                    <>
+                      <BreadcrumbSeparator className="hidden md:block" />
+                      <BreadcrumbItem>
+                        <BreadcrumbPage>{selectedSubject.title}</BreadcrumbPage>
+                      </BreadcrumbItem>
+                    </>
+                  )}
                   {selectedFile && (
                     <>
                       <BreadcrumbSeparator className="hidden md:block" />
                       <BreadcrumbItem>
-                        <BreadcrumbPage>{selectedFile.split('/').slice(2).join('/')}</BreadcrumbPage>
+                        <BreadcrumbPage>{selectedFile.split('/').pop()}</BreadcrumbPage>
                       </BreadcrumbItem>
                     </>
                   )}
@@ -52,16 +77,14 @@ export default function Page() {
           </header>
           <div className="flex flex-1 flex-col gap-4 p-4 pt-0">
             {selectedFile ? (
-              <iframe src={selectedFile} className="w-full h-[calc(100vh-10rem)] rounded-xl" />
+              <iframe
+                src={selectedFile}
+                className="w-full h-[calc(100vh-10rem)] rounded-xl"
+              />
+            ) : selectedSubject ? (
+              <SubjectView subject={selectedSubject} onSelectFile={onSelectFile} />
             ) : (
-              <>
-                <div className="grid auto-rows-min gap-4 md:grid-cols-3">
-                  <div className="bg-muted/50 aspect-video rounded-xl" />
-                  <div className="bg-muted/50 aspect-video rounded-xl" />
-                  <div className="bg-muted/50 aspect-video rounded-xl" />
-                </div>
-                <div className="bg-muted/50 min-h-[100vh] flex-1 rounded-xl md:min-h-min" />
-              </>
+              <SubjectsView subjects={subjects} onSelectSubject={onSelectSubject} />
             )}
           </div>
         </SidebarInset>

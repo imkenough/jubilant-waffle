@@ -18,7 +18,7 @@ import {
   SidebarHeader,
   SidebarRail,
 } from "@/components/ui/sidebar"
-import manifest from "@/material-manifest.json"
+import { type Subject } from "@/hooks/use-viewer"
 
 // This is sample data.
 const data = {
@@ -46,21 +46,15 @@ const data = {
   ],
 }
 
-const navMain = manifest.map((subject) => ({
-  title: subject.title,
-  url: "#",
-  icon: BookOpen,
-  items: subject.files.map((file) => ({
-    title: file.name,
-    url: file.path,
-  })),
-}))
-
 export function AppSidebar({
-  setSelectedFile,
+  subjects,
+  selectedSubject,
+  onSelectSubject,
   ...props
 }: React.ComponentProps<typeof Sidebar> & {
-  setSelectedFile: (file: string | null) => void;
+  subjects: Subject[]
+  selectedSubject: Subject | null
+  onSelectSubject: (subject: Subject) => void
 }) {
   return (
     <Sidebar collapsible="icon" {...props}>
@@ -68,12 +62,16 @@ export function AppSidebar({
         <TeamSwitcher teams={data.teams} />
       </SidebarHeader>
       <SidebarContent>
-        <NavMain items={navMain} setSelectedFile={setSelectedFile} />
+        <NavMain
+          subjects={subjects}
+          selectedSubject={selectedSubject}
+          onSelectSubject={onSelectSubject}
+        />
       </SidebarContent>
       <SidebarFooter>
         <NavUser user={data.user} />
       </SidebarFooter>
       <SidebarRail />
     </Sidebar>
-  );
+  )
 }
