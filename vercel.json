@@ -1,12 +1,4 @@
 {
-  "builds": [
-    {
-      "src": "package.json",
-      "use": "@vercel/static-build",
-      "outputDirectory": "dist",
-      "buildCommand": "tsc -b && vite build"
-    }
-  ],
   "rewrites": [
     {
       "source": "/(.*)",
