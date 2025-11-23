@@ -23,7 +23,8 @@ export function FileViewer() {
       file.name.endsWith(".ppt") ||
       file.name.endsWith(".pptx") ||
       file.name.endsWith(".doc") ||
-      file.name.endsWith(".docx");
+      file.name.endsWith(".docx") ||
+      file.name.endsWith(".pdf");
 
     if (isOfficeDoc) {
       const viewerUrl = `https://docs.google.com/gview?url=${window.location.origin}${file.path}&embedded=true`;
