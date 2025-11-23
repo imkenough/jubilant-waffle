@@ -26,23 +26,8 @@ export function FileViewer() {
       file.name.endsWith(".docx");
 
     if (isOfficeDoc) {
-      return (
-        <div className="bg-muted/50 flex h-full w-full flex-col items-center justify-center gap-4 rounded-xl p-4 text-center">
-          <h3 className="text-xl font-bold">No preview available</h3>
-          <p className="text-muted-foreground">
-            Previews for this file are not available in the local development
-            environment. This feature will work correctly when the website is
-            deployed to a public server.
-          </p>
-          <a
-            href={file.path}
-            download
-            className="text-primary hover:underline"
-          >
-            Download file
-          </a>
-        </div>
-      );
+      const viewerUrl = `https://docs.google.com/gview?url=${window.location.origin}${file.path}&embedded=true`;
+      return <iframe src={viewerUrl} className="h-full w-full rounded-xl" />;
     }
 
     return <iframe src={file.path} className="h-full w-full rounded-xl" />;
