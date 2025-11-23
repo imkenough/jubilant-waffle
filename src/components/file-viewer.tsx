@@ -19,25 +19,33 @@ export function FileViewer() {
       return <div className="p-4">File not found.</div>;
     }
 
-    const isPowerPoint =
-      file.name.endsWith(".ppt") || file.name.endsWith(".pptx");
+    const isOfficeDoc =
+      file.name.endsWith(".ppt") ||
+      file.name.endsWith(".pptx") ||
+      file.name.endsWith(".doc") ||
+      file.name.endsWith(".docx");
 
-    if (isPowerPoint) {
+    if (isOfficeDoc) {
       return (
         <div className="bg-muted/50 flex h-full w-full flex-col items-center justify-center gap-4 rounded-xl p-4 text-center">
           <h3 className="text-xl font-bold">No preview available</h3>
           <p className="text-muted-foreground">
-            Previews for PowerPoint files are not available in the local
-            development environment. This feature will work correctly when the
-            website is deployed to a public server.
+            Previews for this file are not available in the local development
+            environment. This feature will work correctly when the website is
+            deployed to a public server.
           </p>
+          <a
+            href={file.path}
+            download
+            className="text-primary hover:underline"
+          >
+            Download file
+          </a>
         </div>
       );
     }
 
-    return (
-      <iframe src={file.path} className="h-full w-full rounded-xl" />
-    );
+    return <iframe src={file.path} className="h-full w-full rounded-xl" />;
   };
 
   return (
