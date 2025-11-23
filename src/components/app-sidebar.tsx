@@ -2,9 +2,9 @@
 
 import * as React from "react";
 import {
-  AudioWaveform,
-  Command,
-  GalleryVerticalEnd,
+  // AudioWaveform,
+  // Command,
+  // GalleryVerticalEnd,
   Github,
   Globe,
 } from "lucide-react";
@@ -23,30 +23,30 @@ import { type Subject } from "@/hooks/use-viewer";
 import { Button } from "./ui/button";
 
 // This is sample data.
-const data = {
-  user: {
-    name: "shadcn",
-    email: "m@example.com",
-    avatar: "/avatars/shadcn.jpg",
-  },
-  teams: [
-    {
-      name: "Acme Inc",
-      logo: GalleryVerticalEnd,
-      plan: "Enterprise",
-    },
-    {
-      name: "Acme Corp.",
-      logo: AudioWaveform,
-      plan: "Startup",
-    },
-    {
-      name: "Evil Corp.",
-      logo: Command,
-      plan: "Free",
-    },
-  ],
-};
+// const data = {
+//   user: {
+//     name: "shadcn",
+//     email: "m@example.com",
+//     avatar: "/avatars/shadcn.jpg",
+//   },
+//   teams: [
+//     {
+//       name: "Acme Inc",
+//       logo: GalleryVerticalEnd,
+//       plan: "Enterprise",
+//     },
+//     {
+//       name: "Acme Corp.",
+//       logo: AudioWaveform,
+//       plan: "Startup",
+//     },
+//     {
+//       name: "Evil Corp.",
+//       logo: Command,
+//       plan: "Free",
+//     },
+//   ],
+// };
 
 export function AppSidebar({
   subjects,
