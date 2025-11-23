@@ -14,46 +14,22 @@ import {
   SidebarProvider,
   SidebarTrigger,
 } from "@/components/ui/sidebar";
-import { SubjectView } from "@/components/subject-view";
-import { SubjectsView } from "@/components/subjects-view";
 import { useViewer } from "@/hooks/use-viewer";
-import { ModeToggle } from "@/components/mode-toggle"; // Added import
+import { ModeToggle } from "@/components/mode-toggle";
+import { Routes, Route, Link } from "react-router-dom";
+
+// Import the new view components
+import { SubjectsList } from "./components/subjects-list";
+import { SubjectMaterials } from "./components/subject-materials";
+import { FileViewer } from "./components/file-viewer";
 
 export default function Page() {
   const {
-    selectedFile,
     selectedSubject,
-    onSelectFile,
     onSelectSubject,
     subjects,
+    selectedFile,
   } = useViewer();
-
-  const renderFilePreview = () => {
-    if (!selectedFile) return null;
-
-    const isPowerPoint =
-      selectedFile.endsWith(".ppt") || selectedFile.endsWith(".pptx");
-
-    if (isPowerPoint) {
-      return (
-        <div className="bg-muted/50 flex h-[calc(100vh-10rem)] w-full flex-col items-center justify-center gap-4 rounded-xl p-4 text-center">
-          <h3 className="text-xl font-bold">No preview available</h3>
-          <p className="text-muted-foreground">
-            Previews for PowerPoint files are not available in the local
-            development environment. This feature will work correctly when the
-            website is deployed to a public server.
-          </p>
-        </div>
-      );
-    }
-
-    return (
-      <iframe
-        src={selectedFile}
-        className="h-[calc(100vh-10rem)] w-full rounded-xl"
-      />
-    );
-  };
 
   return (
     <ThemeProvider defaultTheme="dark" storageKey="vite-ui-theme">
@@ -74,13 +50,10 @@ export default function Page() {
               <Breadcrumb>
                 <BreadcrumbList>
                   <BreadcrumbItem className="hidden md:block">
-                    <BreadcrumbLink
-                      onClick={() => {
-                        onSelectSubject(null);
-                      }}
-                      className="cursor-pointer"
-                    >
-                      Subjects
+                    <BreadcrumbLink asChild>
+                      <Link to="/" className="cursor-pointer">
+                        Subjects
+                      </Link>
                     </BreadcrumbLink>
                   </BreadcrumbItem>
                   {selectedSubject && (
@@ -88,11 +61,15 @@ export default function Page() {
                       <BreadcrumbSeparator className="hidden md:block" />
                       <BreadcrumbItem>
                         {selectedFile ? (
-                          <BreadcrumbLink
-                            onClick={() => onSelectFile(null)}
-                            className="cursor-pointer"
-                          >
-                            {selectedSubject.title}
+                          <BreadcrumbLink asChild>
+                            <Link
+                              to={`/subject/${encodeURIComponent(
+                                selectedSubject.title
+                              )}`}
+                              className="cursor-pointer"
+                            >
+                              {selectedSubject.title}
+                            </Link>
                           </BreadcrumbLink>
                         ) : (
                           <BreadcrumbPage>
@@ -118,19 +95,17 @@ export default function Page() {
             <ModeToggle />
           </header>
           <div className="flex flex-1 flex-col gap-4 p-4 pt-0">
-            {selectedFile ? (
-              renderFilePreview()
-            ) : selectedSubject ? (
-              <SubjectView
-                subject={selectedSubject}
-                onSelectFile={onSelectFile}
+            <Routes>
+              <Route path="/" element={<SubjectsList />} />
+              <Route
+                path="/subject/:subjectTitle"
+                element={<SubjectMaterials />}
               />
-            ) : (
-              <SubjectsView
-                subjects={subjects}
-                onSelectSubject={onSelectSubject}
+              <Route
+                path="/subject/:subjectTitle/:fileName"
+                element={<FileViewer />}
               />
-            )}
+            </Routes>
           </div>
         </SidebarInset>
       </SidebarProvider>

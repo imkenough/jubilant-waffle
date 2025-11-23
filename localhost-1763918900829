@@ -1,0 +1,18 @@
+react-dom_client.js?v=546fc7e4:20103 Download the React DevTools for a better development experience: https://react.dev/link/react-devtools
+use-viewer.ts:18 Uncaught ReferenceError: subjects is not defined
+    at use-viewer.ts:18:5
+    at mountMemo (react-dom_client.js?v=546fc7e4:6527:25)
+    at Object.useMemo (react-dom_client.js?v=546fc7e4:18709:20)
+    at exports.useMemo (chunk-YX2XZWS3.js?v=546fc7e4:947:36)
+    at useViewer (use-viewer.ts:17:33)
+    at Page (App.tsx:32:7)
+    at Object.react_stack_bottom_frame (react-dom_client.js?v=546fc7e4:18509:20)
+    at renderWithHooks (react-dom_client.js?v=546fc7e4:5654:24)
+    at updateFunctionComponent (react-dom_client.js?v=546fc7e4:7475:21)
+    at beginWork (react-dom_client.js?v=546fc7e4:8525:20)
+react-dom_client.js?v=546fc7e4:6966 An error occurred in the <Page> component.
+
+Consider adding an error boundary to your tree to customize error handling behavior.
+Visit https://react.dev/link/error-boundaries to learn more about error boundaries.
+
+defaultOnUncaughtError @ react-dom_client.js?v=546fc7e4:6966
