@@ -3,9 +3,8 @@
     {
       "src": "package.json",
       "use": "@vercel/static-build",
-      "configuration": {
-        "distDir": "dist"
-      }
+      "outputDirectory": "dist",
+      "buildCommand": "tsc -b && vite build"
     }
   ],
   "rewrites": [
