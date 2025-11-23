@@ -3,7 +3,6 @@
 import * as React from "react"
 import {
   AudioWaveform,
-  BookOpen,
   Command,
   GalleryVerticalEnd,
 } from "lucide-react"

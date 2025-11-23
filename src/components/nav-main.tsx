@@ -1,4 +1,4 @@
-import { type LucideIcon } from "lucide-react";
+
 import { BookOpen } from "lucide-react";
 import {
   SidebarGroup,

@@ -31,7 +31,6 @@ export default function Page() {
     selectedSubject,
     onSelectSubject,
     subjects,
-    selectedFile,
   } = useViewer();
 
   const location = useLocation();
