@@ -1,317 +1,321 @@
 ﻿[
-    {
-        "files":  [
-                      {
-                          "name":  "795503833-IT486-Simplified-Payment-Verification-Spv-486-wk15-spv.pdf",
-                          "path":  "/material/BT - 01.12.25/795503833-IT486-Simplified-Payment-Verification-Spv-486-wk15-spv.pdf"
-                      },
-                      {
-                          "name":  "A3 Question Bank.pdf",
-                          "path":  "/material/BT - 01.12.25/A3 Question Bank.pdf"
-                      },
-                      {
-                          "name":  "Block chain Technologies DS4142 (003) CHO (2).pdf",
-                          "path":  "/material/BT - 01.12.25/Block chain Technologies DS4142 (003) CHO (2).pdf"
-                      },
-                      {
-                          "name":  "chapter01.pptx",
-                          "path":  "/material/BT - 01.12.25/chapter01.pptx"
-                      },
-                      {
-                          "name":  "chapter02.pptx",
-                          "path":  "/material/BT - 01.12.25/chapter02.pptx"
-                      },
-                      {
-                          "name":  "chapter03.pptx",
-                          "path":  "/material/BT - 01.12.25/chapter03.pptx"
-                      },
-                      {
-                          "name":  "chapter04.pptx",
-                          "path":  "/material/BT - 01.12.25/chapter04.pptx"
-                      },
-                      {
-                          "name":  "chapter05.pptx",
-                          "path":  "/material/BT - 01.12.25/chapter05.pptx"
-                      },
-                      {
-                          "name":  "chapter06.pptx",
-                          "path":  "/material/BT - 01.12.25/chapter06.pptx"
-                      },
-                      {
-                          "name":  "chapter07.pptx",
-                          "path":  "/material/BT - 01.12.25/chapter07.pptx"
-                      },
-                      {
-                          "name":  "Lecture21_598PV.pptx",
-                          "path":  "/material/BT - 01.12.25/Lecture21_598PV.pptx"
-                      }
-                  ],
-        "title":  "BT - 01.12.25"
-    },
-    {
-        "files":  [
-                      {
-                          "name":  "1_thresholding_wm.pdf",
-                          "path":  "/material/CV - 03.12.25/1_thresholding_wm.pdf"
-                      },
-                      {
-                          "name":  "2_global threshold_wm.pdf",
-                          "path":  "/material/CV - 03.12.25/2_global threshold_wm.pdf"
-                      },
-                      {
-                          "name":  "3_iterative_wm.pdf",
-                          "path":  "/material/CV - 03.12.25/3_iterative_wm.pdf"
-                      },
-                      {
-                          "name":  "4_multivariable thresholding_wm.pdf",
-                          "path":  "/material/CV - 03.12.25/4_multivariable thresholding_wm.pdf"
-                      },
-                      {
-                          "name":  "Assignment 1 (1).pdf",
-                          "path":  "/material/CV - 03.12.25/Assignment 1 (1).pdf"
-                      },
-                      {
-                          "name":  "Average Filter.pdf",
-                          "path":  "/material/CV - 03.12.25/Average Filter.pdf"
-                      },
-                      {
-                          "name":  "COMPUTER VISION 7thsem (1).pptx",
-                          "path":  "/material/CV - 03.12.25/COMPUTER VISION 7thsem (1).pptx"
-                      },
-                      {
-                          "name":  "ComputerVision_Handout.pdf",
-                          "path":  "/material/CV - 03.12.25/ComputerVision_Handout.pdf"
-                      },
-                      {
-                          "name":  "Histogram_merged.pdf",
-                          "path":  "/material/CV - 03.12.25/Histogram_merged.pdf"
-                      },
-                      {
-                          "name":  "MID term Syllabus CV.pdf",
-                          "path":  "/material/CV - 03.12.25/MID term Syllabus CV.pdf"
-                      },
-                      {
-                          "name":  "Module1_IntroToImageProcessing.pptx",
-                          "path":  "/material/CV - 03.12.25/Module1_IntroToImageProcessing.pptx"
-                      },
-                      {
-                          "name":  "Module2PartA_ImageFormation.pptx",
-                          "path":  "/material/CV - 03.12.25/Module2PartA_ImageFormation.pptx"
-                      },
-                      {
-                          "name":  "Module2PartB_ImagePreprocessing.pptx",
-                          "path":  "/material/CV - 03.12.25/Module2PartB_ImagePreprocessing.pptx"
-                      },
-                      {
-                          "name":  "Module4_ImageSementation.pdf",
-                          "path":  "/material/CV - 03.12.25/Module4_ImageSementation.pdf"
-                      },
-                      {
-                          "name":  "SYLLABUS- CV 7th sem.pdf",
-                          "path":  "/material/CV - 03.12.25/SYLLABUS- CV 7th sem.pdf"
-                      }
-                  ],
-        "title":  "CV - 03.12.25"
-    },
-    {
-        "files":  [
-                      {
-                          "name":  "ETE SYLLABUS.pdf",
-                          "path":  "/material/END TERM SYLLABUS/ETE SYLLABUS.pdf"
-                      }
-                  ],
-        "title":  "END TERM SYLLABUS"
-    },
-    {
-        "files":  [
-                      {
-                          "name":  "Assignment_1_ IR.pdf",
-                          "path":  "/material/IR - 27.11.25/Assignment_1_ IR.pdf"
-                      },
-                      {
-                          "name":  "Incremental Crawlers in Information Retrieval.pdf",
-                          "path":  "/material/IR - 27.11.25/Incremental Crawlers in Information Retrieval.pdf"
-                      },
-                      {
-                          "name":  "INFORMATION RETRIEVAL -ETE.docx",
-                          "path":  "/material/IR - 27.11.25/INFORMATION RETRIEVAL -ETE.docx"
-                      },
-                      {
-                          "name":  "IntroIRch1slides.ppt",
-                          "path":  "/material/IR - 27.11.25/IntroIRch1slides.ppt"
-                      },
-                      {
-                          "name":  "Syllabus INFORMATION RETRIEVAL.docx",
-                          "path":  "/material/IR - 27.11.25/Syllabus INFORMATION RETRIEVAL.docx"
-                      }
-                  ],
-        "title":  "IR - 27.11.25"
-    },
-    {
-        "files":  [
-                      {
-                          "name":  "ch07.pdf",
-                          "path":  "/material/SCM - 05.12.25/ch07.pdf"
-                      },
-                      {
-                          "name":  "ch13.pdf",
-                          "path":  "/material/SCM - 05.12.25/ch13.pdf"
-                      },
-                      {
-                          "name":  "Chapter 1 pdf.pdf",
-                          "path":  "/material/SCM - 05.12.25/Chapter 1 pdf.pdf"
-                      },
-                      {
-                          "name":  "Chapter2_ Supply Chain Integration.pptx",
-                          "path":  "/material/SCM - 05.12.25/Chapter2_ Supply Chain Integration.pptx"
-                      },
-                      {
-                          "name":  "Chopra_Meindl_SCM.pdf",
-                          "path":  "/material/SCM - 05.12.25/Chopra_Meindl_SCM.pdf"
-                      },
-                      {
-                          "name":  "forecasting PdF.pdf",
-                          "path":  "/material/SCM - 05.12.25/forecasting PdF.pdf"
-                      },
-                      {
-                          "name":  "hr_om11_ch03_project management.pdf",
-                          "path":  "/material/SCM - 05.12.25/hr_om11_ch03_project management.pdf"
-                      },
-                      {
-                          "name":  "MRP pdf.pdf",
-                          "path":  "/material/SCM - 05.12.25/MRP pdf.pdf"
-                      },
-                      {
-                          "name":  "Travelling Salesman Problem.pptx",
-                          "path":  "/material/SCM - 05.12.25/Travelling Salesman Problem.pptx"
-                      }
-                  ],
-        "title":  "SCM - 05.12.25"
-    },
-    {
-        "files":  [
-                      {
-                          "name":  "Chapter 1 Introduction.pdf",
-                          "path":  "/material/SE - 29.11.25/Chapter 1 Introduction.pdf"
-                      },
-                      {
-                          "name":  "Chapter 10 Software Certification.pdf",
-                          "path":  "/material/SE - 29.11.25/Chapter 10 Software Certification.pdf"
-                      },
-                      {
-                          "name":  "Chapter 2 Software Development Life Cycle Models.pdf",
-                          "path":  "/material/SE - 29.11.25/Chapter 2 Software Development Life Cycle Models.pdf"
-                      },
-                      {
-                          "name":  "Chapter 3 Software Requirements.pdf",
-                          "path":  "/material/SE - 29.11.25/Chapter 3 Software Requirements.pdf"
-                      },
-                      {
-                          "name":  "Chapter 4 Software Project planning.pdf",
-                          "path":  "/material/SE - 29.11.25/Chapter 4 Software Project planning.pdf"
-                      },
-                      {
-                          "name":  "Chapter 5 Software Design.pdf",
-                          "path":  "/material/SE - 29.11.25/Chapter 5 Software Design.pdf"
-                      },
-                      {
-                          "name":  "chapter 6 Software Metrics.pdf",
-                          "path":  "/material/SE - 29.11.25/chapter 6 Software Metrics.pdf"
-                      },
-                      {
-                          "name":  "Chapter 7 Software Reliability.pdf",
-                          "path":  "/material/SE - 29.11.25/Chapter 7 Software Reliability.pdf"
-                      },
-                      {
-                          "name":  "Chapter 8 Software Testing.pdf",
-                          "path":  "/material/SE - 29.11.25/Chapter 8 Software Testing.pdf"
-                      },
-                      {
-                          "name":  "Chapter 9 Software Maintenance.pdf",
-                          "path":  "/material/SE - 29.11.25/Chapter 9 Software Maintenance.pdf"
-                      },
-                      {
-                          "name":  "comparison of models.ppt",
-                          "path":  "/material/SE - 29.11.25/comparison of models.ppt"
-                      },
-                      {
-                          "name":  "EBookPressman__Software_Engineering.pdf",
-                          "path":  "/material/SE - 29.11.25/EBookPressman__Software_Engineering.pdf"
-                      },
-                      {
-                          "name":  "SE Assignment.pdf",
-                          "path":  "/material/SE - 29.11.25/SE Assignment.pdf"
-                      },
-                      {
-                          "name":  "waterfall_model.pdf",
-                          "path":  "/material/SE - 29.11.25/waterfall_model.pdf"
-                      }
-                  ],
-        "title":  "SE - 29.11.25"
-    },
-    {
-        "files":  [
-                      {
-                          "name":  "Anamoly detection.pptx",
-                          "path":  "/material/SNA - 25.11.25/Anamoly detection.pptx"
-                      },
-                      {
-                          "name":  "AnomalyDetection hitesh mohapatra.pdf",
-                          "path":  "/material/SNA - 25.11.25/AnomalyDetection hitesh mohapatra.pdf"
-                      },
-                      {
-                          "name":  "dm_PageRank.pptx",
-                          "path":  "/material/SNA - 25.11.25/dm_PageRank.pptx"
-                      },
-                      {
-                          "name":  "DS4145_SNA_Course Handout_ July Nov 2025.pdf",
-                          "path":  "/material/SNA - 25.11.25/DS4145_SNA_Course Handout_ July Nov 2025.pdf"
-                      },
-                      {
-                          "name":  "DS4145_SNA_Set2.pdf",
-                          "path":  "/material/SNA - 25.11.25/DS4145_SNA_Set2.pdf"
-                      },
-                      {
-                          "name":  "DS4145_SNA_Set3.pdf",
-                          "path":  "/material/SNA - 25.11.25/DS4145_SNA_Set3.pdf"
-                      },
-                      {
-                          "name":  "Google_PageRanking_problem_The_model_and.pdf",
-                          "path":  "/material/SNA - 25.11.25/Google_PageRanking_problem_The_model_and.pdf"
-                      },
-                      {
-                          "name":  "icdm06-htong-2006-12-14.ppt",
-                          "path":  "/material/SNA - 25.11.25/icdm06-htong-2006-12-14.ppt"
-                      },
-                      {
-                          "name":  "influence1.pptm",
-                          "path":  "/material/SNA - 25.11.25/influence1.pptm"
-                      },
-                      {
-                          "name":  "lecture19-pagerank.ppt",
-                          "path":  "/material/SNA - 25.11.25/lecture19-pagerank.ppt"
-                      },
-                      {
-                          "name":  "Similarity and distance.pptx",
-                          "path":  "/material/SNA - 25.11.25/Similarity and distance.pptx"
-                      },
-                      {
-                          "name":  "SNA Lecture 1.ppt",
-                          "path":  "/material/SNA - 25.11.25/SNA Lecture 1.ppt"
-                      },
-                      {
-                          "name":  "SNA lecture 2.pptx",
-                          "path":  "/material/SNA - 25.11.25/SNA lecture 2.pptx"
-                      },
-                      {
-                          "name":  "social_v3.pdf",
-                          "path":  "/material/SNA - 25.11.25/social_v3.pdf"
-                      },
-                      {
-                          "name":  "TrustRank Algorithm.ppt",
-                          "path":  "/material/SNA - 25.11.25/TrustRank Algorithm.ppt"
-                      }
-                  ],
-        "title":  "SNA - 25.11.25"
-    }
+  {
+    "files": [
+      {
+        "name": "795503833-IT486-Simplified-Payment-Verification-Spv-486-wk15-spv.pdf",
+        "path": "/material/BT - 01.12.25/795503833-IT486-Simplified-Payment-Verification-Spv-486-wk15-spv.pdf"
+      },
+      {
+        "name": "A3 Question Bank.pdf",
+        "path": "/material/BT - 01.12.25/A3 Question Bank.pdf"
+      },
+      {
+        "name": "Block chain Technologies DS4142 (003) CHO (2).pdf",
+        "path": "/material/BT - 01.12.25/Block chain Technologies DS4142 (003) CHO (2).pdf"
+      },
+      {
+        "name": "chapter01.pptx",
+        "path": "/material/BT - 01.12.25/chapter01.pptx"
+      },
+      {
+        "name": "chapter02.pptx",
+        "path": "/material/BT - 01.12.25/chapter02.pptx"
+      },
+      {
+        "name": "chapter03.pptx",
+        "path": "/material/BT - 01.12.25/chapter03.pptx"
+      },
+      {
+        "name": "chapter04.pptx",
+        "path": "/material/BT - 01.12.25/chapter04.pptx"
+      },
+      {
+        "name": "chapter05.pptx",
+        "path": "/material/BT - 01.12.25/chapter05.pptx"
+      },
+      {
+        "name": "chapter06.pptx",
+        "path": "/material/BT - 01.12.25/chapter06.pptx"
+      },
+      {
+        "name": "chapter07.pptx",
+        "path": "/material/BT - 01.12.25/chapter07.pptx"
+      },
+      {
+        "name": "Lecture21_598PV.pptx",
+        "path": "/material/BT - 01.12.25/Lecture21_598PV.pptx"
+      }
+    ],
+    "title": "BT - 01.12.25"
+  },
+  {
+    "files": [
+      {
+        "name": "1_thresholding_wm.pdf",
+        "path": "/material/CV - 03.12.25/1_thresholding_wm.pdf"
+      },
+      {
+        "name": "2_global threshold_wm.pdf",
+        "path": "/material/CV - 03.12.25/2_global threshold_wm.pdf"
+      },
+      {
+        "name": "3_iterative_wm.pdf",
+        "path": "/material/CV - 03.12.25/3_iterative_wm.pdf"
+      },
+      {
+        "name": "4_multivariable thresholding_wm.pdf",
+        "path": "/material/CV - 03.12.25/4_multivariable thresholding_wm.pdf"
+      },
+      {
+        "name": "Assignment 1 (1).pdf",
+        "path": "/material/CV - 03.12.25/Assignment 1 (1).pdf"
+      },
+      {
+        "name": "Average Filter.pdf",
+        "path": "/material/CV - 03.12.25/Average Filter.pdf"
+      },
+      {
+        "name": "COMPUTER VISION 7thsem (1).pptx",
+        "path": "/material/CV - 03.12.25/COMPUTER VISION 7thsem (1).pptx"
+      },
+      {
+        "name": "ComputerVision_Handout.pdf",
+        "path": "/material/CV - 03.12.25/ComputerVision_Handout.pdf"
+      },
+      {
+        "name": "Histogram_merged.pdf",
+        "path": "/material/CV - 03.12.25/Histogram_merged.pdf"
+      },
+      {
+        "name": "MID term Syllabus CV.pdf",
+        "path": "/material/CV - 03.12.25/MID term Syllabus CV.pdf"
+      },
+      {
+        "name": "Module1_IntroToImageProcessing.pptx",
+        "path": "/material/CV - 03.12.25/Module1_IntroToImageProcessing.pptx"
+      },
+      {
+        "name": "Module2PartA_ImageFormation.pptx",
+        "path": "/material/CV - 03.12.25/Module2PartA_ImageFormation.pptx"
+      },
+      {
+        "name": "Module2PartB_ImagePreprocessing.pptx",
+        "path": "/material/CV - 03.12.25/Module2PartB_ImagePreprocessing.pptx"
+      },
+      {
+        "name": "Module4_ImageSementation.pdf",
+        "path": "/material/CV - 03.12.25/Module4_ImageSementation.pdf"
+      },
+      {
+        "name": "SYLLABUS- CV 7th sem.pdf",
+        "path": "/material/CV - 03.12.25/SYLLABUS- CV 7th sem.pdf"
+      }
+    ],
+    "title": "CV - 03.12.25"
+  },
+  {
+    "files": [
+      {
+        "name": "ETE SYLLABUS.pdf",
+        "path": "/material/END TERM SYLLABUS/ETE SYLLABUS.pdf"
+      }
+    ],
+    "title": "END TERM SYLLABUS"
+  },
+  {
+    "files": [
+      {
+        "name": "Assignment_1_ IR.pdf",
+        "path": "/material/IR - 27.11.25/Assignment_1_ IR.pdf"
+      },
+      {
+        "name": "Incremental Crawlers in Information Retrieval.pdf",
+        "path": "/material/IR - 27.11.25/Incremental Crawlers in Information Retrieval.pdf"
+      },
+      {
+        "name": "INFORMATION RETRIEVAL -ETE.docx",
+        "path": "/material/IR - 27.11.25/INFORMATION RETRIEVAL -ETE.docx"
+      },
+      {
+        "name": "IntroIRch1slides.ppt",
+        "path": "/material/IR - 27.11.25/IntroIRch1slides.ppt"
+      },
+      {
+        "name": "Syllabus INFORMATION RETRIEVAL.docx",
+        "path": "/material/IR - 27.11.25/Syllabus INFORMATION RETRIEVAL.docx"
+      },
+      {
+        "name": "Syllabus INFORMATION RETRIEVAL.docx",
+        "path": "/material/IR - 27.11.25/7.pptx"
+      }
+    ],
+    "title": "IR - 27.11.25"
+  },
+  {
+    "files": [
+      {
+        "name": "ch07.pdf",
+        "path": "/material/SCM - 05.12.25/ch07.pdf"
+      },
+      {
+        "name": "ch13.pdf",
+        "path": "/material/SCM - 05.12.25/ch13.pdf"
+      },
+      {
+        "name": "Chapter 1 pdf.pdf",
+        "path": "/material/SCM - 05.12.25/Chapter 1 pdf.pdf"
+      },
+      {
+        "name": "Chapter2_ Supply Chain Integration.pptx",
+        "path": "/material/SCM - 05.12.25/Chapter2_ Supply Chain Integration.pptx"
+      },
+      {
+        "name": "Chopra_Meindl_SCM.pdf",
+        "path": "/material/SCM - 05.12.25/Chopra_Meindl_SCM.pdf"
+      },
+      {
+        "name": "forecasting PdF.pdf",
+        "path": "/material/SCM - 05.12.25/forecasting PdF.pdf"
+      },
+      {
+        "name": "hr_om11_ch03_project management.pdf",
+        "path": "/material/SCM - 05.12.25/hr_om11_ch03_project management.pdf"
+      },
+      {
+        "name": "MRP pdf.pdf",
+        "path": "/material/SCM - 05.12.25/MRP pdf.pdf"
+      },
+      {
+        "name": "Travelling Salesman Problem.pptx",
+        "path": "/material/SCM - 05.12.25/Travelling Salesman Problem.pptx"
+      }
+    ],
+    "title": "SCM - 05.12.25"
+  },
+  {
+    "files": [
+      {
+        "name": "Chapter 1 Introduction.pdf",
+        "path": "/material/SE - 29.11.25/Chapter 1 Introduction.pdf"
+      },
+      {
+        "name": "Chapter 10 Software Certification.pdf",
+        "path": "/material/SE - 29.11.25/Chapter 10 Software Certification.pdf"
+      },
+      {
+        "name": "Chapter 2 Software Development Life Cycle Models.pdf",
+        "path": "/material/SE - 29.11.25/Chapter 2 Software Development Life Cycle Models.pdf"
+      },
+      {
+        "name": "Chapter 3 Software Requirements.pdf",
+        "path": "/material/SE - 29.11.25/Chapter 3 Software Requirements.pdf"
+      },
+      {
+        "name": "Chapter 4 Software Project planning.pdf",
+        "path": "/material/SE - 29.11.25/Chapter 4 Software Project planning.pdf"
+      },
+      {
+        "name": "Chapter 5 Software Design.pdf",
+        "path": "/material/SE - 29.11.25/Chapter 5 Software Design.pdf"
+      },
+      {
+        "name": "chapter 6 Software Metrics.pdf",
+        "path": "/material/SE - 29.11.25/chapter 6 Software Metrics.pdf"
+      },
+      {
+        "name": "Chapter 7 Software Reliability.pdf",
+        "path": "/material/SE - 29.11.25/Chapter 7 Software Reliability.pdf"
+      },
+      {
+        "name": "Chapter 8 Software Testing.pdf",
+        "path": "/material/SE - 29.11.25/Chapter 8 Software Testing.pdf"
+      },
+      {
+        "name": "Chapter 9 Software Maintenance.pdf",
+        "path": "/material/SE - 29.11.25/Chapter 9 Software Maintenance.pdf"
+      },
+      {
+        "name": "comparison of models.ppt",
+        "path": "/material/SE - 29.11.25/comparison of models.ppt"
+      },
+      {
+        "name": "EBookPressman__Software_Engineering.pdf",
+        "path": "/material/SE - 29.11.25/EBookPressman__Software_Engineering.pdf"
+      },
+      {
+        "name": "SE Assignment.pdf",
+        "path": "/material/SE - 29.11.25/SE Assignment.pdf"
+      },
+      {
+        "name": "waterfall_model.pdf",
+        "path": "/material/SE - 29.11.25/waterfall_model.pdf"
+      }
+    ],
+    "title": "SE - 29.11.25"
+  },
+  {
+    "files": [
+      {
+        "name": "Anamoly detection.pptx",
+        "path": "/material/SNA - 25.11.25/Anamoly detection.pptx"
+      },
+      {
+        "name": "AnomalyDetection hitesh mohapatra.pdf",
+        "path": "/material/SNA - 25.11.25/AnomalyDetection hitesh mohapatra.pdf"
+      },
+      {
+        "name": "dm_PageRank.pptx",
+        "path": "/material/SNA - 25.11.25/dm_PageRank.pptx"
+      },
+      {
+        "name": "DS4145_SNA_Course Handout_ July Nov 2025.pdf",
+        "path": "/material/SNA - 25.11.25/DS4145_SNA_Course Handout_ July Nov 2025.pdf"
+      },
+      {
+        "name": "DS4145_SNA_Set2.pdf",
+        "path": "/material/SNA - 25.11.25/DS4145_SNA_Set2.pdf"
+      },
+      {
+        "name": "DS4145_SNA_Set3.pdf",
+        "path": "/material/SNA - 25.11.25/DS4145_SNA_Set3.pdf"
+      },
+      {
+        "name": "Google_PageRanking_problem_The_model_and.pdf",
+        "path": "/material/SNA - 25.11.25/Google_PageRanking_problem_The_model_and.pdf"
+      },
+      {
+        "name": "icdm06-htong-2006-12-14.ppt",
+        "path": "/material/SNA - 25.11.25/icdm06-htong-2006-12-14.ppt"
+      },
+      {
+        "name": "influence1.pptm",
+        "path": "/material/SNA - 25.11.25/influence1.pptm"
+      },
+      {
+        "name": "lecture19-pagerank.ppt",
+        "path": "/material/SNA - 25.11.25/lecture19-pagerank.ppt"
+      },
+      {
+        "name": "Similarity and distance.pptx",
+        "path": "/material/SNA - 25.11.25/Similarity and distance.pptx"
+      },
+      {
+        "name": "SNA Lecture 1.ppt",
+        "path": "/material/SNA - 25.11.25/SNA Lecture 1.ppt"
+      },
+      {
+        "name": "SNA lecture 2.pptx",
+        "path": "/material/SNA - 25.11.25/SNA lecture 2.pptx"
+      },
+      {
+        "name": "social_v3.pdf",
+        "path": "/material/SNA - 25.11.25/social_v3.pdf"
+      },
+      {
+        "name": "TrustRank Algorithm.ppt",
+        "path": "/material/SNA - 25.11.25/TrustRank Algorithm.ppt"
+      }
+    ],
+    "title": "SNA - 25.11.25"
+  }
 ]
